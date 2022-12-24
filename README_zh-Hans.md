@@ -1,7 +1,7 @@
 [English](/README.md) | [ 简体中文](/README_zh-Hans.md) | [繁體中文](/README_zh-Hant.md) | [日本語](/README_ja.md) | [Deutsch](/README_de.md) | [한국어](/README_ko.md)
 
 <div align=center>
-<img src="/doc/image/logo.png"/>
+<img src="/doc/image/logo.svg" width="400" height="150"/>
 </div>
 
 ## LibDriver BH1750FVI
@@ -161,13 +161,13 @@ return 0;
 
 ### 文档
 
-在线文档: https://www.libdriver.com/docs/bh1750fvi/index.html
+在线文档: [https://www.libdriver.com/docs/bh1750fvi/index.html](https://www.libdriver.com/docs/bh1750fvi/index.html)。
 
-离线文档: /doc/html/index.html
+离线文档: /doc/html/index.html。
 
 ### 贡献
 
-请联系lishifenging@outlook.com
+请参考CONTRIBUTING.md。
 
 ### 版权
 
@@ -183,4 +183,4 @@ MIT 许可证（MIT）
 
 ### 联系我们
 
-请联系lishifenging@outlook.com
+请联系lishifenging@outlook.com。

@@ -10,7 +10,5 @@ var searchData=
   ['bh1750fvi_5fcommand_5fone_5ftime_5fl_5fresolution_5fmode_187',['BH1750FVI_COMMAND_ONE_TIME_L_RESOLUTION_MODE',['../driver__bh1750fvi_8c.html#a9580861fb05b2937496d11ba4160ad57',1,'driver_bh1750fvi.c']]],
   ['bh1750fvi_5fcommand_5fpower_5fdown_188',['BH1750FVI_COMMAND_POWER_DOWN',['../driver__bh1750fvi_8c.html#a2aeb60ef5712044fac78eddce157bf4d',1,'driver_bh1750fvi.c']]],
   ['bh1750fvi_5fcommand_5fpower_5fon_189',['BH1750FVI_COMMAND_POWER_ON',['../driver__bh1750fvi_8c.html#a68bf4184639dc85b193a1e46041dda57',1,'driver_bh1750fvi.c']]],
-  ['bh1750fvi_5fcommand_5freset_190',['BH1750FVI_COMMAND_RESET',['../driver__bh1750fvi_8c.html#aa692c68038c672ecd4206ac2e3405845',1,'driver_bh1750fvi.c']]],
-  ['bh1750fvi_5fshot_5fdefault_5fmeasurement_5ftime_191',['BH1750FVI_SHOT_DEFAULT_MEASUREMENT_TIME',['../driver__bh1750fvi__shot_8h.html#ae8430bad658676227d64f41a813f0ee4',1,'driver_bh1750fvi_shot.h']]],
-  ['bh1750fvi_5fshot_5fdefault_5fmode_192',['BH1750FVI_SHOT_DEFAULT_MODE',['../driver__bh1750fvi__shot_8h.html#a18c2771094256258e6ed128c12cbfff1',1,'driver_bh1750fvi_shot.h']]]
+  ['bh1750fvi_5fcommand_5freset_190',['BH1750FVI_COMMAND_RESET',['../driver__bh1750fvi_8c.html#aa692c68038c672ecd4206ac2e3405845',1,'driver_bh1750fvi.c']]]
 ];
