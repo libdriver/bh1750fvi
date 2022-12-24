@@ -1,10 +1,10 @@
-### 1. Chip
+### 1. Board
 
-#### 1.1 Chip Info
+#### 1.1 Board Info
 
-chip name : Raspberry Pi 4B.
+Board Name: Raspberry Pi 4B.
 
-iic pin: SCL/SDA GPIO3/GPIO2.
+IIC Pin: SCL/SDA GPIO3/GPIO2.
 
 ### 2. Install
 
@@ -75,21 +75,41 @@ find_package(bh1750fvi REQUIRED)
 
 #### 3.1 Command Instruction
 
-​           bh1750fvi is a basic command which can test all bh1750fvi driver function:
+1. Show bh1750fvi chip and driver information.
 
-​           -i        show bh1750fvi chip and driver information.
+   ```shell
+   bh1750fvi (-i | --information)
+   ```
 
-​           -h       show bh1750fvi help.
+2. Show bh1750fvi help.
 
-​           -p       show bh1750fvi pin connections of the current board.
+   ```shell
+   bh1750fvi (-h | --help)
+   ```
 
-​           -t read -a  (0 | 1)  <times>         run bh1750fvi read test.times means the test times.
+3. Show bh1750fvi pin connections of the current board.
 
-​           -c (basic -a (0 | 1)  <times> | shot -a (0 | 1)  <times>)
+   ```shell
+   bh1750fvi (-p | --port)
+   ```
 
-​           -c basic -a (0 | 1)  <times>       run bh1750fvi continuous reading function.times means the read times.
+4. Run bh1750fvi read test, times means the test times.
 
-​           -c shot -a (0 | 1)  <times>       run bh1750fvi shot reading function.times means the read times.
+   ```shell
+   bh1750fvi (-t read | --test=read) [--addr=<0 | 1>] [--times=<num>]
+   ```
+
+5. Run bh1750fvi continuous reading function, times means the read times.
+
+   ```shell
+   bh1750fvi (-e read | --example=read) [--addr=<0 | 1>] [--times=<num>]
+   ```
+
+6. Run bh1750fvi shot reading function, times means the read times.
+
+   ```shell
+   bh1750fvi (-e shot | --example=shot) [--addr=<0 | 1>] [--times=<num>]
+   ```
 
 #### 3.2 Command Example
 
@@ -115,7 +135,7 @@ bh1750fvi: SDA connected to GPIO2(BCM).
 ```
 
 ```shell
-./bh1750fvi -t read -a 0 3
+./bh1750fvi -t read --addr=0 --times=3
 
 bh1750fvi: chip is ROHM BH1750FVI.
 bh1750fvi: manufacturer is ROHM.
@@ -128,73 +148,78 @@ bh1750fvi: max temperature is 85.0C.
 bh1750fvi: min temperature is -40.0C.
 bh1750fvi: start read test.
 bh1750fvi: high resolution mode test.
-bh1750fvi: 567.50lux.
-bh1750fvi: 565.83lux.
-bh1750fvi: 566.67lux.
+bh1750fvi: 255.00lux.
+bh1750fvi: 254.17lux.
+bh1750fvi: 253.33lux.
 bh1750fvi: high resolution mode2 test.
-bh1750fvi: 566.25lux.
-bh1750fvi: 566.25lux.
-bh1750fvi: 565.83lux.
+bh1750fvi: 252.50lux.
+bh1750fvi: 252.50lux.
+bh1750fvi: 252.50lux.
 bh1750fvi: low resolution mode test.
-bh1750fvi: 563.33lux.
-bh1750fvi: 563.33lux.
-bh1750fvi: 563.33lux.
+bh1750fvi: 250.00lux.
+bh1750fvi: 250.00lux.
+bh1750fvi: 250.00lux.
 bh1750fvi: continuous read test.
-bh1750fvi: 563.33lux.
-bh1750fvi: 563.33lux.
-bh1750fvi: 563.33lux.
+bh1750fvi: 250.00lux.
+bh1750fvi: 250.00lux.
+bh1750fvi: 250.00lux.
 bh1750fvi: measurement time test.
-bh1750fvi: set measurement time 64.
-bh1750fvi: 560.62lux.
-bh1750fvi: 560.62lux.
-bh1750fvi: 560.62lux.
-bh1750fvi: set measurement time 148.
-bh1750fvi: 564.12lux.
-bh1750fvi: 564.12lux.
-bh1750fvi: 564.12lux.
-bh1750fvi: set measurement time 247.
-bh1750fvi: 564.29lux.
-bh1750fvi: 564.29lux.
-bh1750fvi: 564.29lux.
+bh1750fvi: set measurement time 83.
+bh1750fvi: 249.40lux.
+bh1750fvi: 249.40lux.
+bh1750fvi: 249.40lux.
+bh1750fvi: set measurement time 136.
+bh1750fvi: 250.29lux.
+bh1750fvi: 250.29lux.
+bh1750fvi: 250.29lux.
+bh1750fvi: set measurement time 227.
+bh1750fvi: 251.28lux.
+bh1750fvi: 251.28lux.
+bh1750fvi: 251.28lux.
 bh1750fvi: finish read test.
 ```
 
 ```shell
-./bh1750fvi -c read -a 0 3
+./bh1750fvi -e read --addr=0 --times=3
 
 1/3.
-560.83lux.
+251.67lux.
 2/3.
-562.50lux.
+250.83lux.
 3/3.
-562.50lux.
+251.67lux.
 ```
 
 ```shell
-./bh1750fvi -c shot -a 0 3
+./bh1750fvi -e shot --addr=0 --times=3
 
 1/3.
-562.50lux.
+250.00lux.
 2/3.
-562.50lux.
+251.67lux.
 3/3.
-563.33lux.
+251.67lux.
 ```
 
 ```shell
 ./bh1750fvi -h
 
-bh1750fvi -i
-	show bh1750fvi chip and driver information.
-bh1750fvi -h
-	show bh1750fvi help.
-bh1750fvi -p
-	show bh1750fvi pin connections of the current board.
-bh1750fvi -t read -a (0 | 1) <times>
-	run bh1750fvi read test.times means the test times.
-bh1750fvi -c basic -a (0 | 1) <times>
-	run bh1750fvi continuous reading function.times means the read times.
-bh1750fvi -c shot -a (0 | 1) <times>
-	run bh1750fvi shot reading function.times means the read times.
+Usage:
+  bh1750fvi (-i | --information)
+  bh1750fvi (-h | --help)
+  bh1750fvi (-p | --port)
+  bh1750fvi (-t read | --test=read) [--addr=<0 | 1>] [--times=<num>]
+  bh1750fvi (-e read | --example=read) [--addr=<0 | 1>] [--times=<num>]
+  bh1750fvi (-e shot | --example=shot) [--addr=<0 | 1>] [--times=<num>]
+
+Options:
+      --addr=<0 | 1>              Set the chip iic address.([default: 0])
+  -e <read | shot>, --example=<read | shot>
+                                  Run the driver example.
+  -h, --help                      Show the help.
+  -i, --information               Show the chip information.
+  -p, --port                      Display the pin connections of the current board.
+  -t <read>, --test=<read>        Run the driver test.
+      --times=<num>               Set the running times.([default: 3])
 ```
 

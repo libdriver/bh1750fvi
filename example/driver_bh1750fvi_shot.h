@@ -45,6 +45,7 @@ extern "C"{
 
 /**
  * @addtogroup bh1750fvi_example_driver
+ * @{
  */
 
 /**
