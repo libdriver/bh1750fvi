@@ -58,19 +58,19 @@ We use '\n' to wrap lines.If your serial port assistant displays exceptions (e.g
    bh1750fvi (-p | --port)
    ```
 
-4. Run bh1750fvi read test, times means the test times.
+4. Run bh1750fvi read test, num means the test times.
 
    ```shell
    bh1750fvi (-t read | --test=read) [--addr=<0 | 1>] [--times=<num>]
    ```
 
-5. Run bh1750fvi continuous reading function, times means the read times.
+5. Run bh1750fvi continuous reading function, num means the read times.
 
    ```shell
    bh1750fvi (-e read | --example=read) [--addr=<0 | 1>] [--times=<num>]
    ```
 
-6. Run bh1750fvi shot reading function, times means the read times.
+6. Run bh1750fvi shot reading function, num means the read times.
 
    ```shell
    bh1750fvi (-e shot | --example=shot) [--addr=<0 | 1>] [--times=<num>]
