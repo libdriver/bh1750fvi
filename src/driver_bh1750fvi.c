@@ -301,7 +301,7 @@ uint8_t bh1750fvi_init(bh1750fvi_handle_t *handle)
         return 1;                                                                     /* return error */
     }
     handle->delay_ms(5);                                                              /* delay 5ms */
-    handle->mode = BH1750FVI_MODE_HIGH_RESOLUTION_MODE;                               /* high resolutin mode */
+    handle->mode = BH1750FVI_MODE_HIGH_RESOLUTION_MODE;                               /* high resolution mode */
     handle->t = 69;                                                                   /* set default 69 */
     handle->inited = 1;                                                               /* flag finish initialization */
     
@@ -841,7 +841,7 @@ uint8_t bh1750fvi_info(bh1750fvi_info_t *info)
     info->max_current_ma = MAX_CURRENT;                             /* set maximum current */
     info->temperature_max = TEMPERATURE_MAX;                        /* set minimal temperature */
     info->temperature_min = TEMPERATURE_MIN;                        /* set maximum temperature */
-    info->driver_version = DRIVER_VERSION;                          /* set driver verison */
+    info->driver_version = DRIVER_VERSION;                          /* set driver version */
     
     return 0;                                                       /* success return 0 */
 }

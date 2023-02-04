@@ -66,7 +66,7 @@ uint8_t bh1750fvi(uint8_t argc, char **argv)
         {"times", required_argument, NULL, 2},
         {NULL, 0, NULL, 0},
     };
-    char type[33] = "unknow";
+    char type[33] = "unknown";
     uint32_t times = 3;
     bh1750fvi_address_t addr = BH1750FVI_ADDRESS_LOW;
     
@@ -354,7 +354,7 @@ int main(uint8_t argc, char **argv)
     }
     else
     {
-        bh1750fvi_interface_debug_print("bh1750fvi: unknow status code.\n");
+        bh1750fvi_interface_debug_print("bh1750fvi: unknown status code.\n");
     }
 
     return 0;
