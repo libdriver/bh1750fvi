@@ -1,6 +1,6 @@
 /**
  * @mainpage  LibDriver BH1750FVI
- * @brief     libdriver bh1750fvi is a full function driver of bh1750fvi and it can run in both MCU and Linux platform.
+ * @brief     LibDriver BH1750FVI is a full function driver of BH1750FVI and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *
