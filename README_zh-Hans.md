@@ -8,7 +8,7 @@
 
 [![MISRA](https://img.shields.io/badge/misra-compliant-brightgreen.svg)](/misra/README.md) [![API](https://img.shields.io/badge/api-reference-blue.svg)](https://www.libdriver.com/docs/bh1750fvi/index.html) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](/LICENSE)
 
-BH1750FVI是用于I2C总线接口的数字环境光传感器IC。该集成电路最适合获取环境光数据，用于调整手机的LCD和键盘背光功率。可以在高分辨率下检测宽范围。它可用于手机、液晶电视、笔记本电脑、便携式游戏机、数码相机、数码摄像机、PDA、LCD显示器等。
+BH1750FVI是用于I2C总线接口的数字环境光传感器IC。该集成电路最适合获取环境光数据，用于调整手机的LCD和键盘背光功率，可以在高分辨率下检测宽范围。它可用于手机、液晶电视、笔记本电脑、便携式游戏机、数码相机、数码摄像机、PDA、LCD显示器等。
 
 LibDriver BH1750FVI是LibDriver推出的BH1750FVI的全功能驱动，该驱动提供连续模式光照读取、单次模式光照读取等功能并且它符合MISRA标准。
 
