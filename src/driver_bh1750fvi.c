@@ -65,9 +65,9 @@
 
 /**
  * @brief      read bytes
- * @param[in]  *handle points to a bh1750fvi handle structure
- * @param[out] *data points to a data buffer
- * @param[in]  len is the data length
+ * @param[in]  *handle pointer to a bh1750fvi handle structure
+ * @param[out] *data pointer to a data buffer
+ * @param[in]  len data length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -87,9 +87,9 @@ static uint8_t a_bh1750fvi_iic_read(bh1750fvi_handle_t *handle, uint8_t *data, u
 
 /**
  * @brief     write bytes
- * @param[in] *handle points to a bh1750fvi handle structure
- * @param[in] *data points to a data buffer
- * @param[in] len is the data length
+ * @param[in] *handle pointer to a bh1750fvi handle structure
+ * @param[in] *data pointer to a data buffer
+ * @param[in] len data length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -109,8 +109,8 @@ static uint8_t a_bh1750fvi_iic_write(bh1750fvi_handle_t *handle, uint8_t *data, 
 
 /**
  * @brief     set the address pin
- * @param[in] *handle points to a bh1750fvi handle structure
- * @param[in] addr_pin is the chip address pins
+ * @param[in] *handle pointer to a bh1750fvi handle structure
+ * @param[in] addr_pin chip address pins
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -130,8 +130,8 @@ uint8_t bh1750fvi_set_addr_pin(bh1750fvi_handle_t *handle, bh1750fvi_address_t a
 
 /**
  * @brief      get the address pin
- * @param[in]  *handle points to a bh1750fvi handle structure
- * @param[out] *addr_pin points to a chip address pins buffer
+ * @param[in]  *handle pointer to a bh1750fvi handle structure
+ * @param[out] *addr_pin pointer to a chip address pins buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -151,8 +151,8 @@ uint8_t bh1750fvi_get_addr_pin(bh1750fvi_handle_t *handle, bh1750fvi_address_t *
 
 /**
  * @brief     set the mode
- * @param[in] *handle points to a bh1750fvi handle structure
- * @param[in] mode is the set mode
+ * @param[in] *handle pointer to a bh1750fvi handle structure
+ * @param[in] mode chip mode
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -177,8 +177,8 @@ uint8_t bh1750fvi_set_mode(bh1750fvi_handle_t *handle, bh1750fvi_mode_t mode)
 
 /**
  * @brief      get the mode
- * @param[in]  *handle points to a bh1750fvi handle structure
- * @param[out] *mode points to a mode buffer
+ * @param[in]  *handle pointer to a bh1750fvi handle structure
+ * @param[out] *mode pointer to a mode buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -203,7 +203,7 @@ uint8_t bh1750fvi_get_mode(bh1750fvi_handle_t *handle, bh1750fvi_mode_t *mode)
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to a bh1750fvi handle structure
+ * @param[in] *handle pointer to a bh1750fvi handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic failed
@@ -310,7 +310,7 @@ uint8_t bh1750fvi_init(bh1750fvi_handle_t *handle)
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to a bh1750fvi handle structure
+ * @param[in] *handle pointer to a bh1750fvi handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic deinit failed
@@ -355,7 +355,7 @@ uint8_t bh1750fvi_deinit(bh1750fvi_handle_t *handle)
 
 /**
  * @brief     power down
- * @param[in] *handle points to a bh1750fvi handle structure
+ * @param[in] *handle pointer to a bh1750fvi handle structure
  * @return    status code
  *            - 0 success
  *            - 1 power down failed
@@ -391,7 +391,7 @@ uint8_t bh1750fvi_power_down(bh1750fvi_handle_t *handle)
 
 /**
  * @brief     power on
- * @param[in] *handle points to a bh1750fvi handle structure
+ * @param[in] *handle pointer to a bh1750fvi handle structure
  * @return    status code
  *            - 0 success
  *            - 1 power on failed
@@ -427,7 +427,7 @@ uint8_t bh1750fvi_power_on(bh1750fvi_handle_t *handle)
 
 /**
  * @brief     reset
- * @param[in] *handle points to a bh1750fvi handle structure
+ * @param[in] *handle pointer to a bh1750fvi handle structure
  * @return    status code
  *            - 0 success
  *            - 1 reset failed
@@ -463,8 +463,8 @@ uint8_t bh1750fvi_reset(bh1750fvi_handle_t *handle)
 
 /**
  * @brief     set the measurement time
- * @param[in] *handle points to a bh1750fvi handle structure
- * @param[in] t is the set measurement time
+ * @param[in] *handle pointer to a bh1750fvi handle structure
+ * @param[in] t measurement time
  * @return    status code
  *            - 0 success
  *            - 1 set measurement time failed
@@ -516,9 +516,9 @@ uint8_t bh1750fvi_set_measurement_time(bh1750fvi_handle_t *handle, uint8_t t)
 
 /**
  * @brief      read data from the chip once
- * @param[in]  *handle points to a bh1750fvi handle structure
- * @param[out] *raw points to a raw lux buffer
- * @param[out] *lux points to a converted lux buffer
+ * @param[in]  *handle pointer to a bh1750fvi handle structure
+ * @param[out] *raw pointer to a raw lux buffer
+ * @param[out] *lux pointer to a converted lux buffer
  * @return     status code
  *             - 0 success
  *             - 1 single read failed
@@ -606,9 +606,9 @@ uint8_t bh1750fvi_single_read(bh1750fvi_handle_t *handle, uint16_t *raw, float *
 
 /**
  * @brief      read data from the chip continuously
- * @param[in]  *handle points to a bh1750fvi handle structure
- * @param[out] *raw points to a raw lux buffer
- * @param[out] *lux points to a converted lux buffer
+ * @param[in]  *handle pointer to a bh1750fvi handle structure
+ * @param[out] *raw pointer to a raw lux buffer
+ * @param[out] *lux pointer to a converted lux buffer
  * @return     status code
  *             - 0 success
  *             - 1 continuous read failed
@@ -657,7 +657,7 @@ uint8_t bh1750fvi_continuous_read(bh1750fvi_handle_t *handle, uint16_t *raw, flo
 
 /**
  * @brief     start chip reading
- * @param[in] *handle points to a bh1750fvi handle structure
+ * @param[in] *handle pointer to a bh1750fvi handle structure
  * @return    status code
  *            - 0 success
  *            - 1 start continuous read failed
@@ -712,7 +712,7 @@ uint8_t bh1750fvi_start_continuous_read(bh1750fvi_handle_t *handle)
 
 /**
  * @brief     stop chip reading
- * @param[in] *handle points to a bh1750fvi handle structure
+ * @param[in] *handle pointer to a bh1750fvi handle structure
  * @return    status code
  *            - 0 success
  *            - 1 stop continuous read failed
@@ -767,9 +767,9 @@ uint8_t bh1750fvi_stop_continuous_read(bh1750fvi_handle_t *handle)
 
 /**
  * @brief     set the chip register
- * @param[in] *handle points to a bh1750fvi handle structure
- * @param[in] *buf points to a data buffer.
- * @param[in] len is the data buffer
+ * @param[in] *handle pointer to a bh1750fvi handle structure
+ * @param[in] *buf pointer to a data buffer.
+ * @param[in] len data buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -793,9 +793,9 @@ uint8_t bh1750fvi_set_reg(bh1750fvi_handle_t *handle, uint8_t *buf, uint16_t len
 
 /**
  * @brief      get the chip register
- * @param[in]  *handle points to a bh1750fvi handle structure
- * @param[out] *buf points to a data buffer.
- * @param[in]  len is the data buffer
+ * @param[in]  *handle pointer to a bh1750fvi handle structure
+ * @param[out] *buf pointer to a data buffer.
+ * @param[in]  len data buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -819,7 +819,7 @@ uint8_t bh1750fvi_get_reg(bh1750fvi_handle_t *handle, uint8_t *buf, uint16_t len
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to a bh1750fvi info structure
+ * @param[out] *info pointer to a bh1750fvi info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL

@@ -56,7 +56,7 @@ extern "C"{
 
 /**
  * @brief     shot example init
- * @param[in] addr_pin is the iic device address
+ * @param[in] addr_pin iic device address
  * @return    status code
  *            - 0 success
  *            - 1 init failed
@@ -66,7 +66,7 @@ uint8_t bh1750fvi_shot_init(bh1750fvi_address_t addr_pin);
 
 /**
  * @brief      shot example read
- * @param[out] *lux points to a converted lux buffer
+ * @param[out] *lux pointer to a converted lux buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
