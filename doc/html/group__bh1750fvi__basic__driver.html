@@ -299,9 +299,9 @@ Functions</h2></td></tr>
 <p>read data from the chip continuously </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bh1750fvi handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*raw</td><td>points to a raw lux buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*lux</td><td>points to a converted lux buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bh1750fvi handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*raw</td><td>pointer to a raw lux buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*lux</td><td>pointer to a converted lux buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -337,7 +337,7 @@ Functions</h2></td></tr>
 <p>close the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bh1750fvi handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bh1750fvi handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -384,8 +384,8 @@ Functions</h2></td></tr>
 <p>get the address pin </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bh1750fvi handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*addr_pin</td><td>points to a chip address pins buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bh1750fvi handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*addr_pin</td><td>pointer to a chip address pins buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -429,8 +429,8 @@ Functions</h2></td></tr>
 <p>get the mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bh1750fvi handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*mode</td><td>points to a mode buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bh1750fvi handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*mode</td><td>pointer to a mode buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -465,7 +465,7 @@ Functions</h2></td></tr>
 <p>get chip's information </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>points to a bh1750fvi info structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>pointer to a bh1750fvi info structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -499,7 +499,7 @@ Functions</h2></td></tr>
 <p>initialize the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bh1750fvi handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bh1750fvi handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -537,7 +537,7 @@ Functions</h2></td></tr>
 <p>power down </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bh1750fvi handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bh1750fvi handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -573,7 +573,7 @@ Functions</h2></td></tr>
 <p>power on </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bh1750fvi handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bh1750fvi handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -609,7 +609,7 @@ Functions</h2></td></tr>
 <p>reset </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bh1750fvi handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bh1750fvi handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -655,8 +655,8 @@ Functions</h2></td></tr>
 <p>set the address pin </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bh1750fvi handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr_pin</td><td>is the chip address pins </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bh1750fvi handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr_pin</td><td>chip address pins </td></tr>
   </table>
   </dd>
 </dl>
@@ -700,8 +700,8 @@ Functions</h2></td></tr>
 <p>set the measurement time </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bh1750fvi handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>is the set measurement time </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bh1750fvi handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>measurement time </td></tr>
   </table>
   </dd>
 </dl>
@@ -748,8 +748,8 @@ Functions</h2></td></tr>
 <p>set the mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bh1750fvi handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>is the set mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bh1750fvi handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>chip mode </td></tr>
   </table>
   </dd>
 </dl>
@@ -800,9 +800,9 @@ Functions</h2></td></tr>
 <p>read data from the chip once </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bh1750fvi handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*raw</td><td>points to a raw lux buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*lux</td><td>points to a converted lux buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bh1750fvi handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*raw</td><td>pointer to a raw lux buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*lux</td><td>pointer to a converted lux buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -839,7 +839,7 @@ Functions</h2></td></tr>
 <p>start chip reading </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bh1750fvi handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bh1750fvi handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -876,7 +876,7 @@ Functions</h2></td></tr>
 <p>stop chip reading </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bh1750fvi handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bh1750fvi handle structure </td></tr>
   </table>
   </dd>
 </dl>

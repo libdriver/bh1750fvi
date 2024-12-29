@@ -40,7 +40,7 @@ static bh1750fvi_handle_t gs_handle;        /**< bh1750fvi handle */
 
 /**
  * @brief     basic example init
- * @param[in] addr_pin is the iic device address
+ * @param[in] addr_pin iic device address
  * @return    status code
  *            - 0 success
  *            - 1 init failed
@@ -122,7 +122,7 @@ uint8_t bh1750fvi_basic_init(bh1750fvi_address_t addr_pin)
 
 /**
  * @brief      basic example read
- * @param[out] *lux points to a converted lux buffer
+ * @param[out] *lux pointer to a converted lux buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
