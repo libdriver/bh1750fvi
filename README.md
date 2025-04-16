@@ -10,7 +10,7 @@
 
 BH1750FVI is an digital Ambient Light Sensor IC for I2C bus interface. This IC is the most suitable to obtain the ambient light data for adjusting LCD and Keypad backlight power of Mobile phone. It is possible to detect wide range at High resolution.It can be used in Mobile phone, LCD TV, NOTE PC, Portable game machine, Digital camera, Digital video camera, PDA, LCD display and so on.
 
-LibDriver BH1750FVI is the full function driver of BH1750FVI launched by LibDriver.It provides continuous  mode brightness reading, single mode brightness reading and other functions. LibDriver is MISRA compliant.
+LibDriver BH1750FVI is a full-featured driver of BH1750FVI launched by LibDriver.It provides continuous  mode brightness reading, single mode brightness reading and other functions. LibDriver is MISRA compliant.
 
 ### Table of Contents
 
