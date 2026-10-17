@@ -1,3 +1,9 @@
+## 1.0.8 (2026-10-17)
+
+## Bug Fixes
+
+- fix command bugs
+
 ## 1.0.7 (2025-11-15)
 
 ## Bug Fixes

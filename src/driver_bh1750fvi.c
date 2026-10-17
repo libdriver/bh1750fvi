@@ -735,25 +735,7 @@ uint8_t bh1750fvi_stop_continuous_read(bh1750fvi_handle_t *handle)
         return 3;                                                                /* return error */
     }
     
-    if (handle->mode == BH1750FVI_MODE_HIGH_RESOLUTION_MODE)                     /* high resolution mode */
-    {
-        prev = BH1750FVI_COMMAND_ONE_TIME_H_RESOLUTION_MODE;                     /* high resolution mode command */
-    }
-    else if (handle->mode == BH1750FVI_MODE_HIGH_RESOLUTION_MODE2)               /* high resolution mode2 */
-    {
-        prev = BH1750FVI_COMMAND_ONE_TIME_H_RESOLUTION_MODE2;                    /* high resolution mode2 command */
-    }
-    else if (handle->mode == BH1750FVI_MODE_LOW_RESOLUTION_MODE)                 /* low resolution mode */
-    {
-        prev = BH1750FVI_COMMAND_ONE_TIME_L_RESOLUTION_MODE;                     /* low resolution mode command */
-    }
-    else
-    {
-        handle->debug_print("bh1750fvi: mode is invalid.\n");                    /* mode is invalid */
-        
-        return 4;                                                                /* return error */
-    }
-    
+    prev = BH1750FVI_COMMAND_POWER_DOWN;                                         /* set power down */
     res = a_bh1750fvi_iic_write(handle, &prev, 1);                               /* write the command */
     if (res != 0)                                                                /* check error */
     {
